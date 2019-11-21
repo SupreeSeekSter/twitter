@@ -5,7 +5,8 @@ class CommentsController < ApplicationController
 
   def create
     puts "id is #{params[:id]}"
-    @user = Tweet.find(params[:id]).comments.create(comment_params)
+    Tweet.find(params[:id]).comments.create(comment_params)
+    redirect_to root_path
   end
 
   private
