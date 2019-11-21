@@ -6,10 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/homes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/tweets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/tweets_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
