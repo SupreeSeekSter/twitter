@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbf722ff-e0fd-4cdf-97ab-03ca536dfce1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/twitter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/twitter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +172,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/twitter@Development__twitter.rcov" NAME="Development: twitter Coverage Results" MODIFIED="1574322850118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="twitter" />
+    <SUITE FILE_PATH="coverage/twitter@Development__twitter.rcov" NAME="Development: twitter Coverage Results" MODIFIED="1574340277717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="twitter" />
   </component>
 </project>
