@@ -16,7 +16,7 @@
 <table>
   <% @tweets.each do |tweet| %>
     <tr>
-      <td><%= tweet.inspect %></td>
+      <td><%= tweet.id.inspect %></td>
     </tr>
     <tr>
       <td>
@@ -28,7 +28,7 @@
           </p>
 
           <p>
-            <%= form.submit %>
+            <%= form.button :submit , name: "id",value: tweet.id %>
           </p>
         <% end %>
 
