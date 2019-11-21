@@ -2,7 +2,7 @@ class HomesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @user = current_user.email
+    @tweets = current_user.tweets
   end
 
   def current_user
