@@ -1,7 +1,9 @@
 class TweetsController < ApplicationController
 
   def create
-    @user = current_user.tweets.create(tweet_params)
+    @tweet = current_user.tweets.create(tweet_params)
+
+    redirect_to root_path
   end
 
   private
