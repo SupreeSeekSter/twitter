@@ -3,9 +3,6 @@ class HomesController < ApplicationController
 
   def index
     @user = current_user
-
-    binding.pry()
-
     @tweets = current_user.tweets
   end
 
@@ -14,7 +11,7 @@ class HomesController < ApplicationController
   end
 
   def create
-
+    @new_tweet = Tweet.new
   end
 
   def new
