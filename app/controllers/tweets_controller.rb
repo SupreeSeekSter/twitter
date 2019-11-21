@@ -1,8 +1,7 @@
 class TweetsController < ApplicationController
 
   def create
-    @tweet = current_user.tweets.find[:id]
-    # @tweets.create(tweet_params)
+    @user = current_user.tweets.create(tweet_params)
   end
 
   private
