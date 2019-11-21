@@ -1,10 +1,15 @@
 class CommentsController < ApplicationController
+  def index
+
+  end
+
   def create
-    @user = current_user.tweets.create(tweet_params)
+    puts "id is #{params[:id]}"
+    @user = Tweet.find(params[:id]).comments.create(comment_params)
   end
 
   private
-  def tweet_params
+  def comment_params
     params.require(:comment).permit(:body)
   end
 end

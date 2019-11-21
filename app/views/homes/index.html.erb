@@ -1,4 +1,4 @@
-<%= form_for @new_tweet, url: tweets_path, local: true do |form| %>
+<%= form_for @new_tweet, local: true do |form| %>
   <p>
     <%= form.label :Owner %><br>
   </p>
@@ -23,12 +23,12 @@
 
         <%= form_for @new_comment, local: true do |form| %>
           <p>
-            <%= form.label :commnet %><br>
-            <%= form.text_area :comment %>
+            <%= form.label :body %><br>
+            <%= form.text_area :body %>
           </p>
 
           <p>
-            <%= form.button :submit , name: "id",value: tweet.id %>
+            <%= form.submit name: :id, value: tweet.id %>
           </p>
         <% end %>
 
