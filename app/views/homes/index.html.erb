@@ -1,4 +1,4 @@
-<%= form_with scope: :tweet, url: tweets_path, local: true do |form| %>
+<%= form_for @new_tweet, url: tweets_path, local: true do |form| %>
   <p>
     <%= form.label :Owner %><br>
   </p>
@@ -21,7 +21,7 @@
     <tr>
       <td>
 
-        <%= form_with scope: :tweet, local: true do |form| %>
+        <%= form_for @new_comment, local: true do |form| %>
           <p>
             <%= form.label :commnet %><br>
             <%= form.text_area :comment %>

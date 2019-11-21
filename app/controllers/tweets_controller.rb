@@ -1,7 +1,6 @@
 class TweetsController < ApplicationController
 
   def create
-    puts("Creating new tweet")
     @user = current_user.tweets.create(tweet_params)
   end
 
