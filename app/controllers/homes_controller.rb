@@ -8,4 +8,12 @@ class HomesController < ApplicationController
   def current_user
     super
   end
+
+  def create
+
+  end
+
+  def new
+
+  end
 end

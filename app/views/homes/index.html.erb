@@ -1,4 +1,16 @@
-<h1>Homes#index</h1>
-<p>Find me in app/views/homes/index.html.erb</p>
+<%= form_with scope: :tweet, url: tweets_path, local: true do |form| %>
+  <p>
+    <%= form.label :Owner %><br>
+  </p>
+
+  <p>
+    <%= form.label :context %><br>
+    <%= form.text_area :context %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
 
 <%@user %>
