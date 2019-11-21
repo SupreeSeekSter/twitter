@@ -13,10 +13,26 @@
   </p>
 <% end %>
 
-<% @tweets.each do |tweet| %>
-  <tr>
-    <td><%= tweet.inspect %></td>
+<table>
+  <% @tweets.each do |tweet| %>
+    <tr>
+      <td><%= tweet.inspect %></td>
+    </tr>
+    <tr>
+      <td>
 
-    <td></td>
-<% end %>
-</tr>
+        <%= form_with scope: :tweet, url: tweets_path, local: true do |form| %>
+          <p>
+            <%= form.label :commnet %><br>
+            <%= form.text_area :comment %>
+          </p>
+
+          <p>
+            <%= form.submit %>
+          </p>
+        <% end %>
+
+      </td>
+    </tr>
+  <% end %>
+</table>
