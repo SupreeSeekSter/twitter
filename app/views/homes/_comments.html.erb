@@ -1,0 +1,16 @@
+<% filteredComments = @mama.select do |comment|
+  comment.id == "1"
+end %>
+
+<% @mama.each do |comment| %>
+
+  <ul>
+    <%= comment.id %>>
+    <%= image_tag("avatar_comment.png", size: "50x50", class: "rounded-circle") %>
+<!--    <b class="font-weight-bold">-->
+      <%# user = @users.select { |user| user.id == tweet.user_id } %>
+      <%#= current_user.email %>
+<!--    </b>-->
+  </ul>
+
+<% end %>

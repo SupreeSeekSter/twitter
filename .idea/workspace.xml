@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbf722ff-e0fd-4cdf-97ab-03ca536dfce1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/assets/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/avatar_comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/cat1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/homes/_comments.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/homes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homes_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,9 +56,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/views/homes" />
       <recent name="$PROJECT_DIR$/app/views/layouts" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,7 +185,7 @@
       <updated>1574319021642</updated>
       <workItem from="1574319022772" duration="1581000" />
       <workItem from="1574413988690" duration="5897000" />
-      <workItem from="1574497517903" duration="5467000" />
+      <workItem from="1574497517903" duration="9481000" />
     </task>
     <servers />
   </component>

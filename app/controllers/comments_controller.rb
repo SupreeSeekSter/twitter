@@ -3,8 +3,8 @@ class CommentsController < ApplicationController
   end
 
   def create
-    puts "LONGG id is #{params[:id]}  sksksk  #{params[:comment][:body]}"
-    Tweet.find(params[:id]).comments.create(comment_params)
+    puts "LONGG id is #{params[:tweet_id]}  sksksk  #{params[:comment][:body]}"
+    Tweet.find(params[:tweet_id]).comments.create(comment_params)
     redirect_to root_path
   end
 

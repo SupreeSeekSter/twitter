@@ -3,8 +3,10 @@ class HomesController < ApplicationController
 
   def index
     @user = current_user
+    @users = User.all
     @tweets = Tweet.all
     @comments = Comment.all
+    @mama = Comment.all
 
     @new_tweet = Tweet.new
     @new_comment = Comment.new
