@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbf722ff-e0fd-4cdf-97ab-03ca536dfce1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/_main_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_main_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/_new_tweet.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_new_tweet.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +179,7 @@
       <updated>1574319021642</updated>
       <workItem from="1574319022772" duration="1581000" />
       <workItem from="1574413988690" duration="5897000" />
-      <workItem from="1574497517903" duration="5219000" />
+      <workItem from="1574497517903" duration="5467000" />
     </task>
     <servers />
   </component>
