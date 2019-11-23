@@ -1,10 +1,9 @@
 class CommentsController < ApplicationController
   def index
-
   end
 
   def create
-    puts "id is #{params[:id]}"
+    puts "LONGG id is #{params[:id]}  sksksk  #{params[:comment][:body]}"
     Tweet.find(params[:id]).comments.create(comment_params)
     redirect_to root_path
   end

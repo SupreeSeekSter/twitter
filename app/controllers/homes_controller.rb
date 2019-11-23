@@ -4,6 +4,8 @@ class HomesController < ApplicationController
   def index
     @user = current_user
     @tweets = Tweet.all
+    @comments = Comment.all
+
     @new_tweet = Tweet.new
     @new_comment = Comment.new
   end

@@ -55,8 +55,19 @@
       <td><%= tweet.inspect %></td>
     </tr>
     <tr>
+
+      <% filteredComments = @comments.select do |_|
+        comment.tweet_id == tweet.id
+      end %>
+
+      <% filteredComments.each do |comment| %>
+        <td>
+          <% comment.body %>
+        </td>
+      <% end %>
+
       <td>
-        <%tweet.user.id %>
+        <% tweet.user.id %>
         <%= form_for @new_comment, local: true do |form| %>
           <p>
             <%= form.label :body %><br>
