@@ -1,0 +1,32 @@
+<div class="container">
+  <table>
+
+    <ul>
+
+    </ul>
+    <% @tweets.each do |tweet| %>
+      <tr>
+
+        <% filteredComments = @comments.select do |_|
+          comment.tweet_id == tweet.id
+        end %>
+
+        <td>
+          <% tweet.user.id %>
+          <%= form_for @new_comment, local: true do |form| %>
+            <p>
+              <%= form.label :body %><br>
+              <%= form.text_area :body %>
+            </p>
+
+            <p>
+              <%= form.submit name: :id, value: tweet.id %>
+            </p>
+          <% end %>
+
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+</div>

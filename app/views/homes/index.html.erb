@@ -1,53 +1,7 @@
 <div class="container">
   <%= render 'homes/main_navbar' %>
-</div>
 
-<div class="container">
-  <%= form_for @new_tweet, local: true do |form| %>
-    <p>
-      <%= form.label :Owner %><br>
-    </p>
+  <%= render 'homes/new_tweet' %>
 
-    <p>
-      <%= form.label :context %><br>
-      <%= form.text_area :context %>
-    </p>
-
-    <p>
-      <%= form.submit %>
-    </p>
-  <% end %>
-
-  <table>
-
-    <ul>
-
-    </ul>
-    <% @tweets.each do |tweet| %>
-
-
-
-      <tr>
-
-        <% filteredComments = @comments.select do |_|
-          comment.tweet_id == tweet.id
-        end %>
-
-        <td>
-          <% tweet.user.id %>
-          <%= form_for @new_comment, local: true do |form| %>
-            <p>
-              <%= form.label :body %><br>
-              <%= form.text_area :body %>
-            </p>
-
-            <p>
-              <%= form.submit name: :id, value: tweet.id %>
-            </p>
-          <% end %>
-
-        </td>
-      </tr>
-    <% end %>
-  </table>
+  <%= render 'homes/tweets' %>
 </div>

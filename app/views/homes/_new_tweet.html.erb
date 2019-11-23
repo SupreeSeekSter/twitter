@@ -1,0 +1,11 @@
+<div class="card my-2 p-3" >
+  <%= form_for @new_tweet, local: true do |form| %>
+    <p>
+      <%= form.text_area :context, class: "form-control", placeholder:"What the news?" %>
+    </p>
+
+    <p>
+      <%= form.submit "Tweet!!", class: 'btn btn-primary' %>
+    </p>
+  <% end %>
+</div>
