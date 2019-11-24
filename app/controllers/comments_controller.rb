@@ -4,12 +4,13 @@ class CommentsController < ApplicationController
 
   def create
     puts "LONGG id is #{params[:tweet_id]}  sksksk  #{params[:comment][:body]}"
-    Tweet.find(params[:tweet_id]).comments.create(comment_params)
+    puts "LONGG id is #{  Tweet.find(params[:tweet_id]).comments.create(params[:body]).inspect} "
+    # Tweet.find(params[:tweet_id]).comments.create(params[:body])
     redirect_to root_path
   end
 
-  private
-  def comment_params
-    params.require(:comment).permit(:body)
-  end
+  # private
+  # def comment_params
+  #   params.require(:comment).permit(:body)
+  # end
 end
