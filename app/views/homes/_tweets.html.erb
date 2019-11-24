@@ -12,6 +12,8 @@
         <% user = @users.select { |user| user.id == tweet.user_id } %>
         <%= current_user.email %>
       </b>
+
+      <small><%= time_ago_in_words(tweet.created_at) %></small>
     </ul>
 
     <ul>

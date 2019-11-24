@@ -4,7 +4,7 @@ class HomesController < ApplicationController
   def index
     @user = current_user
     @users = User.all
-    @tweets = Tweet.all
+    @tweets = Tweet.all.order(created_at: :desc)
     @comments = Comment.all
     @mama = Comment.all
 
