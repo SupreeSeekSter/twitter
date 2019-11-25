@@ -1,9 +1,5 @@
 <div class="card my-2 p3">
 
-  <% @comments.each do |comment| %>
-    <h1>Comemnt <%= comment.body %> </h1>
-  <% end %>
-
   <% @tweets.each do |tweet| %>
 
     <ul>
@@ -20,7 +16,7 @@
       <%= tweet.context %>
 
       <ul>
-        <%= render 'homes/comments' %>
+        <%= render 'homes/comments', current_tweet_id: tweet.id %>
 
         <td>
           <%= form_for @new_comment, local: true do |form| %>

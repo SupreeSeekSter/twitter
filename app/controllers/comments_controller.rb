@@ -3,19 +3,24 @@ class CommentsController < ApplicationController
   end
 
   def create
-    tweet = Tweet.find(params[:tweet_id])
-    comment = tweet.comments.create(comment_params)
+    tweet = current_user.tweets.find(params[:tweet_id])
+    # comment = tweet.comments.create(comment_params)
+    comment = tweet.comments.build(comment_params)
+    comment.user_id = current_user.id
+    comment.save
+
+    puts comment.inspect
 
     if comment.errors.present?
       raise comment.errors.inspect
     end
-    puts "#{comment.errors.inspect}"
+
     redirect_to root_path
   end
 
   private
   def comment_params
-    puts "#{params.require(:comment).permit(:body).inspect}"
+    puts "GGGGGGGG #{params.require(:comment).permit(:body,:user_id).inspect}"
     params.require(:comment).permit(:body)
   end
 end

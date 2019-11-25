@@ -6,7 +6,6 @@ class HomesController < ApplicationController
     @users = User.all
     @tweets = Tweet.all.order(created_at: :desc)
     @comments = Comment.all
-    @mama = Comment.all
 
     @new_tweet = Tweet.new
     @new_comment = Comment.new
