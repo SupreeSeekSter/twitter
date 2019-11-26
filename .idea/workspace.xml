@@ -4,9 +4,6 @@
     <list default="true" id="bbf722ff-e0fd-4cdf-97ab-03ca536dfce1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/homes/_comments.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_comments.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/_main_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_main_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
