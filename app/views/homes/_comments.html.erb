@@ -6,7 +6,7 @@ end %>
 
     <% commenter = @users.find(comment.user_id) %>
     <%= image_tag("avatar_comment.png", size: "50x50", class: "rounded-circle") %>
-    <b1><%= commenter.email %></b1>
+    <b><%= commenter.email %></b>
     <br>
 
 <!--    <b class="font-weight-bold">-->
@@ -14,5 +14,6 @@ end %>
       <%#= current_user.email %>
 <!--    </b>-->
   <%= comment.body %>
+  <br>
 
 <% end %>
