@@ -1,7 +1,7 @@
-<div class="card tweet-list my-2 p3">
+<div class="tweet-container">
 
   <% @tweets.each do |tweet| %>
-    <ul>
+    <div class="container-inline">
       <%= image_tag("avatar.png", size: "50x50", class: "rounded-circle") %>
       <b class="font-weight-bold">
         <% user = @users.select { |user| user.id == tweet.user_id } %>
@@ -9,9 +9,9 @@
       </b>
 
       <small><%= time_ago_in_words(tweet.created_at) %></small>
-    </ul>
+    </div>
 
-    <ul>
+    <div class="container-inline">
       <%= tweet.context %>
 
       <%= render 'homes/comments', current_tweet_id: tweet.id %>
@@ -19,7 +19,7 @@
       <td>
         <%= form_for @new_comment, local: true do |form| %>
           <p>
-            <%= form.text_field :body, class: "form-control col-md-4", placeholder:"Comment" %>
+            <%= form.text_area :body, class: "form-control col-md-4", placeholder:"Comment" %>
           </p>
 
           <p>
@@ -30,8 +30,8 @@
 
       </td>
 
-    </ul>
+    </div>
 
-    <hr>
+    <hr class="style-eight">
   <% end %>
 </div>

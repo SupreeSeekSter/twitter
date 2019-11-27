@@ -11,17 +11,17 @@ end %>
   <div class="row">
     <div class="col-md-8">
       <div class="page-header">
-        <h3>Comments <small class="float-right"><%= filteredComments.count %> Comments</small></h3>
+        <h3><%= filteredComments.count %> comments:</h3>
       </div>
 
-      <div class="comments-list mt-3">
+      <div class="comments-list">
 
         <% filteredComments.each do |comment| %>
 
           <% commenter = @users.find(comment.user_id) %>
 
           <p class="float-right"><small><%= time_ago_in_words(comment.created_at) %></small></p>
-          <div class="comment-block">
+          <div class="comment-block my-4">
             <img src="http://lorempixel.com/40/40/people/1/">
             <div class="media-body">
 
@@ -31,8 +31,6 @@ end %>
               <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
             </div>
           </div>
-          <hr>
-
 
         <% end %>
 
