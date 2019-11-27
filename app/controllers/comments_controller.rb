@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
   end
 
   def create
-    tweet = current_user.tweets.find(params[:tweet_id])
+    tweet = Tweet.all.find(params[:tweet_id])
     # comment = tweet.comments.create(comment_params)
     comment = tweet.comments.build(comment_params)
     comment.user_id = current_user.id

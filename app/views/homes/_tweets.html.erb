@@ -1,11 +1,11 @@
 <% @tweets.each do |tweet| %>
   <div class="tweet-container">
-
+    <% tweeter = @users.find(tweet.user_id) %>
     <div>
       <%= image_tag("avatar.png", size: "50x50", class: "rounded-circle float-left mr-3") %>
       <div>
         <b class="font-weight-bold">
-          <%= current_user.email %>
+          <%= tweeter.email %>
         </b>
         <small>(<%= time_ago_in_words(tweet.created_at) %>)</small>
         <br>
