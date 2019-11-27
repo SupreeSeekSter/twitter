@@ -20,20 +20,21 @@ end %>
 
           <% commenter = @users.find(comment.user_id) %>
 
-          <p class="float-right"></p>
-          <div class="comment-block my-4">
-            <div class="commenter-details">
-              <%= image_tag("avatar_comment.png", size: "50x50", class: "rounded-circle") %>
-              <b class="font-weight-bold">
-                <%= commenter.email %>
-                <small>(<%= time_ago_in_words(comment.created_at) %>)</small>
-              </b>
+          <div>
+            <div>
+              <%= image_tag("avatar_comment.png", size: "50x50", class: "rounded-circle float-left mr-3") %>
+              <div>
+                <b class="font-weight-bold">
+                  <%= commenter.email %>
+                  <small>(<%= time_ago_in_words(comment.created_at) %>)</small>
+                </b>
+                <br>
+                <%= comment.body %>
+                <br>
+                <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+              </div>
             </div>
 
-            <br>
-            <%= comment.body %>
-
-            <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
           </div>
 
         <% end %>
