@@ -9,7 +9,7 @@ end %>
 
 <div class="comment-container mt-5">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="page-header">
         <h3><%= filteredComments.count %> comments:</h3>
       </div>
@@ -20,16 +20,20 @@ end %>
 
           <% commenter = @users.find(comment.user_id) %>
 
-          <p class="float-right"><small><%= time_ago_in_words(comment.created_at) %></small></p>
+          <p class="float-right"></p>
           <div class="comment-block my-4">
-            <img src="http://lorempixel.com/40/40/people/1/">
-            <div class="media-body">
-
-              <h4 class="media-heading user_name"><%= commenter.email %></h4>
-              <%= comment.body %>
-
-              <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+            <div class="commenter-details">
+              <%= image_tag("avatar_comment.png", size: "50x50", class: "rounded-circle") %>
+              <b class="font-weight-bold">
+                <%= commenter.email %>
+                <small>(<%= time_ago_in_words(comment.created_at) %>)</small>
+              </b>
             </div>
+
+            <br>
+            <%= comment.body %>
+
+            <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
           </div>
 
         <% end %>

@@ -7,7 +7,7 @@
         <%= current_user.email %>
       </b>
 
-      <small><%= time_ago_in_words(tweet.created_at) %></small>
+      <small>(<%= time_ago_in_words(tweet.created_at) %>)</small>
     </div>
 
     <div class="new-comment-container mt-2">
