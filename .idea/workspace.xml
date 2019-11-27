@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbf722ff-e0fd-4cdf-97ab-03ca536dfce1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/twitter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/twitter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/homes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/homes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/homes/_comments.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_comments.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homes/_main_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_main_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/_tweets.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,6 +190,7 @@
       <workItem from="1574582625012" duration="2100000" />
       <workItem from="1574675262093" duration="7000" />
       <workItem from="1574675587073" duration="1798000" />
+      <workItem from="1574839080654" duration="4776000" />
     </task>
     <servers />
   </component>
@@ -203,6 +211,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/twitter@Development__twitter.rcov" NAME="Development: twitter Coverage Results" MODIFIED="1574739179280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="twitter" />
+    <SUITE FILE_PATH="coverage/twitter@Development__twitter.rcov" NAME="Development: twitter Coverage Results" MODIFIED="1574839348222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="twitter" />
   </component>
 </project>
