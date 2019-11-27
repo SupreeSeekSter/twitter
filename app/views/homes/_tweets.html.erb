@@ -1,17 +1,19 @@
 <% @tweets.each do |tweet| %>
   <div class="tweet-container">
-    <div class="container-inline">
-      <%= image_tag("avatar.png", size: "50x50", class: "rounded-circle") %>
-      <b class="font-weight-bold">
-        <% user = @users.select { |user| user.id == tweet.user_id } %>
-        <%= current_user.email %>
-      </b>
 
-      <small>(<%= time_ago_in_words(tweet.created_at) %>)</small>
+    <div>
+      <%= image_tag("avatar.png", size: "50x50", class: "rounded-circle float-left mr-3") %>
+      <div>
+        <b class="font-weight-bold">
+          <%= current_user.email %>
+        </b>
+        <small>(<%= time_ago_in_words(tweet.created_at) %>)</small>
+        <br>
+        <%= tweet.context %>
+      </div>
     </div>
 
     <div class="new-comment-container mt-2">
-      <%= tweet.context %>
 
       <%= render 'homes/comments', current_tweet_id: tweet.id %>
 
