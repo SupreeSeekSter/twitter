@@ -1,6 +1,5 @@
-<div class="tweet-container">
-
-  <% @tweets.each do |tweet| %>
+<% @tweets.each do |tweet| %>
+  <div class="tweet-container">
     <div class="container-inline">
       <%= image_tag("avatar.png", size: "50x50", class: "rounded-circle") %>
       <b class="font-weight-bold">
@@ -11,7 +10,7 @@
       <small><%= time_ago_in_words(tweet.created_at) %></small>
     </div>
 
-    <div class="container-inline">
+    <div class="new-comment-container mt-2">
       <%= tweet.context %>
 
       <%= render 'homes/comments', current_tweet_id: tweet.id %>
@@ -19,7 +18,7 @@
       <td>
         <%= form_for @new_comment, local: true do |form| %>
           <p>
-            <%= form.text_area :body, class: "form-control col-md-4", placeholder:"Comment" %>
+            <%= form.text_area :body, class: "form-control col-md-4", placeholder: "Comment" %>
           </p>
 
           <p>
@@ -29,9 +28,6 @@
         <% end %>
 
       </td>
-
     </div>
-
-    <hr class="style-eight">
-  <% end %>
-</div>
+  </div>
+<% end %>

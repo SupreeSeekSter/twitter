@@ -1,7 +1,7 @@
 .container{
   background: #2E2F30;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 1px;
 }
 
 .navbar {
@@ -17,9 +17,12 @@
 .tweet-container {
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 12px;
   padding-top: 12px;
   border-radius: 5px;
   background: white;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .comment-block {
